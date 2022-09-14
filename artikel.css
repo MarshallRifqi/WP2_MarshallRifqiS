@@ -1,0 +1,71 @@
+*, html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fn-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 40px;
+    background-color: #003049;
+}
+
+.artikel-name{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+}
+.firstname{
+    color: white;
+
+}
+
+.lastname{
+    color: red;
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation li, a{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+.navigation a:hover{
+    background-color: red;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+    .fn-container {position: relative;}
+    .fn-container a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .fn-container a {
+        flex: none;
+        display: block;
+        text-align: left;
+    }
+}
